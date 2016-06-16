@@ -1,1 +1,1 @@
-#welcome to my firdt gitPage
+#welcome to my first gitPage
