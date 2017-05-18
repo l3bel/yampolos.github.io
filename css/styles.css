@@ -1,0 +1,657 @@
+ /*///////////FONTS/////////////
+ ////////////////////////////*/
+@font-face {
+  font-family: 'Raleway Dots';
+  src: url('../fonts/RalewayDots-Regular.ttf');
+}
+@font-face {
+  font-family: 'Baloo Tamma';
+  src: url('../fonts/BalooTamma-Regular.ttf');
+}
+@font-face {
+  font-family: 'Lato-Regular';
+  src: url('../fonts/Lato/Lato-Regular.ttf');
+}
+@font-face {
+  font-family: 'OpenSans-Light';
+  src: url('../fonts/OpenSans/OpenSans-Light.ttf');
+}
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url('../fonts/OpenSans/OpenSans-Regular.ttf');
+}
+@font-face {
+  font-family: 'OpenSans-Semibold';
+  src: url('../fonts/OpenSans/OpenSans-Semibold.ttf');
+}
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url('../fonts/OpenSans/OpenSans-Bold.ttf');
+}
+/* ///////////////////////////////////
+//////////////////////////////////////
+
+              NAVIGATION
+              
+//////////////////////////////////////
+////////////////////////////////////*/
+.footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  padding : 4% 0 6% 0;
+  z-index: 99;
+}
+.footer a img{
+  margin: 0 auto;
+}
+.footer a h3{
+  margin: 0 auto;
+  text-align: center;
+}
+.lienCv{
+ display: inline-block;
+ width: 120px;
+ text-align: center;
+}
+
+.skill, .exper, .imgFolio, .cvPdf, .lienContact{
+ height: 90px;
+ z-index: 1;
+text-align: center;
+}
+.lienCvSkill, .lienCvExper, .lienCvPdf,.lienCvFolio, .lienCvLienContact{
+  font-size: 18px;
+  color: rgb(6,54,72);
+  text-decoration: none;
+  margin: 0;
+  display: none;
+  font-family: 'OpenSans-Light', sans-serif;
+  text-align: center;
+  line-height: 90px;
+}
+.skill:hover .lienCvSkill{
+  display: inline-block;
+}
+.exper:hover .lienCvExper{
+  display : inline-block;
+}
+.cvPdf:hover .lienCvPdf{
+  display : inline-block;
+}
+.portFolio:hover .lienCvFolio{
+  display : inline-block;
+}
+.lienContact:hover .lienCvLienContact{
+  display : inline-block;
+}
+.portFolio:hover .imgFolio{
+ display: none;
+}
+.skill:hover .skill{
+ display: none;
+}
+.exper:hover .exper{
+ display: none;
+}
+.cvPdf:hover .cvPdf{
+ display: none;
+}
+.lienContact:hover .lienContact{
+ display: none;
+}
+/* ///////////////////////////////////
+//////////////////////////////////////
+
+              GENERALITÉS
+
+//////////////////////////////////////
+////////////////////////////////////*/
+body {
+  margin: 0; padding: 0; width: 100%;height: 100%;
+  font-family: 'OpenSans-Light';
+  text-align: center;
+  background-color: #D6D1BE;
+  background-image: url('../img/cloudLeft.png'), url('../img/cloudLeft.png');
+  background-repeat: no-repeat, no-repeat;
+  background-size: 10em, 21em;
+  background-position: 5% -10px, 106% -80px;
+  animation: animCloud 2s linear 3;
+}
+@keyframes animCloud {
+  0% {background-position: 5% -10px, 106% -80px;}
+  50% {background-position: 5% 10px, 106% -60px;}
+  100% {background-position: 5% -10px, 106% -80px;}
+}
+.container-fluid{
+  margin: 0!important;
+  padding: 0!important;
+  overflow: hidden;
+  height: 100%;
+  min-height: 100vh;
+  background-image: url("../img/bgBody.png"), url("../img/bouqalll.png");
+  background-repeat: repeat, no-repeat;
+  background-position: center center, 66% 2%;
+  background-size: auto, 25%;
+}
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+ul, li{
+  list-style: none;
+  padding-left: 0;
+}
+a, a:hover{
+  text-decoration: none;
+}
+/* ///////////////////////////////////
+//////////////////////////////////////
+
+              ACCUEIL
+
+//////////////////////////////////////
+////////////////////////////////////*/
+/*   Animation CIEL   */
+.sky2{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  opacity:.9;
+}
+.css{
+  position: fixed;
+  width: 100%;
+  height: 50em;
+  background-image: url('../img/css.png');
+  background-size: 5em;
+  background-repeat: no-repeat;
+  background-position: 80% top;
+  -ms-transform:rotate(0.02turn);
+  -webkit-transform:rotate(0.02turn);
+  transform:rotate(0.02turn);
+  animation: animCss 5s linear 1;
+}
+@keyframes animCss {
+  from {
+    background-position: 70% 170%;
+    background-size: 9em;
+  }
+  to {
+    background-position: 80% top;
+    -ms-transform:rotate(0.02turn);
+    -webkit-transform:rotate(0.02turn);
+    transform:rotate(0.02turn);
+  }
+}
+.js{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/js.png');
+  background-size: 7em;
+  background-repeat: no-repeat;
+  background-position: 17% top;
+  -ms-transform:rotate(-0.02turn);
+  -webkit-transform:rotate(-0.02turn);
+  transform:rotate(-0.02turn);
+  animation: animJs 3s linear 1;
+}
+@keyframes animJs {
+  from {
+    background-position: 21% 170%;
+    background-size: 13em;
+  }
+  to {
+    background-position:17% top;
+    -ms-transform:rotate(-0.02turn);
+    -webkit-transform:rotate(-0.02turn);
+    transform:rotate(-0.02turn);
+  }
+}
+/*  accueil  */
+.monTexte{
+  padding: 30px;
+  text-align: left;
+  margin-top: 7%;
+  }
+.nom{
+  font-size: 36px;
+  font-family: 'Baloo Tamma';
+  color: #273E55;
+}
+.nom .word1{
+  color: #fff; 
+}
+.intitule{
+  font-family: 'OpenSans-Light', sans-serif;
+  color: rgb(6,54,72);
+  font-size: 21px;
+  margin: 0 0 10px 0;
+}
+.intituleDev{
+  margin-bottom: 30px;
+}
+.intituleDev .word1{
+  font-family: 'OpenSans-Semibold';
+}
+
+.pIntro{
+  margin-top: 10px;
+  color: #273E55;
+  font-size:16px;
+  font-family: 'OpenSans-Light', sans-serif;
+}
+/* ///////////////////////////////////
+//////////////////////////////////////
+
+              EXPERIENCE
+              
+//////////////////////////////////////
+////////////////////////////////////*/
+.screen{
+  width: 100%;
+  min-height: 100%;
+  height: initial;
+  position: absolute;
+  z-index: 99;
+  top: 0!important;
+  text-align: center;
+  display: none;
+  background-color: rgba(255,255,255, .98);
+  left: 0!important;
+  right: 0!important;
+  padding: 0 0 10vh 0!important;
+  color: black;
+  background-repeat: repeat;
+}
+.closeScreen{
+  font-size: 18px;
+  color: #4CBAED;
+  margin: 10px 0;
+  text-align: right;
+  cursor: pointer;
+  width: 99%;
+}
+.closeScreen:hover{
+  color: black;
+  text-decoration: none;
+}
+.experience{
+   padding: 5vh 0 0 0;
+}
+.experience h2{}
+.carsl{
+  margin-bottom: 40px!important;
+  padding-bottom: 40px!important;
+  }
+.uniteExp{
+  margin-left: 200px;
+  margin-right: 200px;
+  padding: 20px;
+}
+.date{
+  margin: 30px 0 0 0;
+  font-size: 12px;
+}
+.posteExp{
+  margin: 0;
+  font-size: 18px;
+  font-family: 'OpenSans-Semibold';
+}
+.etablExp{
+  margin: 0;
+  font-size: 16px;
+}
+.descrExp{
+  margin: 0;
+  font-size: 12px;
+}
+.formationContainer{
+  min-height: 200px;
+  width: 70%;
+  margin: 0 auto;
+}
+.titreExp{
+  background-image: url(../img/exper.png);
+}
+.titreFormation{
+  background-image: url(../img/formation.png);
+}
+.titreFormation, .titreExp{
+  font-size: 27px;
+  font-family: 'Baloo Tamma';
+  height: 110px;
+  margin: 30px auto;
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding-top: 90px;
+}
+.uniteForm{
+  display: inline-block;
+}
+/************/
+.slick-list.dragging{
+  cursor: pointer;
+  cursor: hand;
+}
+.slick-dots{
+    bottom: initial!important;
+}
+/* ///////////////////////////////////
+//////////////////////////////////////
+
+              COMPETENCES
+              
+//////////////////////////////////////
+////////////////////////////////////*/
+.comp{
+  margin-right: 120px;
+  margin-left: 120px;
+}
+.comp h2 {
+  font-size: 27px;
+  font-family: 'Baloo Tamma';
+  margin-bottom: 10px;
+}
+.comp img{
+  margin: 0 auto;
+  height: 80px;
+}
+.comp ul {
+  list-style: none;
+  line-height: 2;
+  margin-left: 0;
+  padding-left: 0;
+  margin-top: 10px;
+}
+.comp span {
+  font-size: 1.4em;
+  font-family: 'OpenSans-Semibold', sans-serif;
+}
+.comp ul li {
+  font-size: 1.2em;
+}
+.compDesign h2 {
+  color: rgb(0,175,157);
+}
+.compDev h2 {
+  color: rgb(255,177,35);
+}
+
+.compMethod h2 {
+  color: rgb(153,153,153);
+}
+/* ///////////////////////////////////
+//////////////////////////////////////
+
+              FOLIO
+              
+//////////////////////////////////////
+////////////////////////////////////*/
+.screenFolio{
+  background-color: rgb(55,61,68);
+}
+.designIcon{
+  display: none;
+}
+.codeIcon{
+  display: none;
+}
+.titreFolio{
+  text-align: center;
+  margin: 5vw 0 2vw 0;
+  padding: 0!important;
+  font-size: 48px;
+  font-family: 'Baloo Tamma', cursive;
+  color:rgb(209,204,186);
+}
+.titreFolio .char1,
+.titreFolio .char13{
+  font-family: 'Lato-Regular', sans-serif;
+}
+.titreFolio .char1,.titreFolio .char7,
+.titreFolio .char8,.titreFolio .char9,
+.titreFolio .char10,.titreFolio .char11{
+  color:rgb(59,89,152);
+}
+.slideFolio{
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+.slideboxFolio{
+  color: #fff;
+}
+.visuel{
+ margin-bottom: 30px;
+}
+.descrip{
+  text-align: left;
+}
+.slideboxFolio h3{
+  font-family: 'OpenSans-Semibold';
+  font-size: 19px;
+  margin-top: 0;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(209,204,186,.2);
+}
+.descrip i{
+  color: #fff;
+  font-size: 18px;
+}
+.descrip ul span{
+  padding-top: 20px;
+  font-size: 18px;
+  font-family: 'OpenSans-Semibold';
+}
+.git, .visit{
+  font-size: 16px;
+}
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+}
+.lightbox img {
+  vertical-align: center;
+  max-height: 96%;
+  margin-top: 2%;
+}
+.lightbox:target {
+  display: block;
+}
+.imgLightBox{
+  min-width: 70%;
+}
+/* ///////////////////////////////////
+//////////////////////////////////////
+
+              CONTACT
+              
+//////////////////////////////////////
+////////////////////////////////////*/
+.closeScreenContact{
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+.closeScreenContact:hover{
+  color: white;
+}
+.contact {
+  
+  background: rgba(0,0,0,0.8);
+  color:#fff;
+}
+.contact:target {
+  outline: none;
+  display: block;
+}
+.contact p{
+margin: 6em 0.5em 20px 0.5em;
+font-family: 'OpenSans-Regular';
+font-size: 1em;text-align: left;
+color: rgb(223,218,198);
+}
+.contact h3{
+font-family: 'Baloo Tamma', cursive;
+color: rgb(190,212,210);
+}
+.infoContact,.formCotact{
+padding: 0;
+}
+.infoContact{
+color: white;
+text-align: left;
+text-decoration: none;
+}
+.infoContact>ul{
+list-style: none;
+padding: 0;
+margin-bottom: 10px;
+font-size: 1.2em;
+}
+.infoContact li:nth-child(4){
+margin-top: 10px;
+font-family: 'OpenSans-Semibold';
+}
+.infoContact li:nth-child(5),
+.infoContact li:nth-child(6),
+.infoContact li:nth-child(7){
+display: inline-block;
+font-size: 1.8em;
+margin: 10px 10px 0 10px;
+}
+.infoContact i:hover{
+  color: rgb(223,218,198);
+}
+.infoContact a{
+text-decoration: none;
+}
+.monMail:hover{
+  color: rgb(223,218,198);
+}
+.envoyer{
+  color:#fff;
+  background:none;
+  border:none;
+  font-family: 'Baloo Tamma', cursive;
+  font-size: 1.6em;
+  text-decoration: none;
+  margin-top: 2em;
+}
+.envoyer:hover{
+  text-decoration: none;
+  color: rgb(223,218,198);
+  background:none;
+  font-size: 1.8em;
+}
+.containerContact{}
+.fa-paper-plane-o{
+  font-size: 60px;
+  margin-top: 20px;
+  color: rgb(190,212,210);
+}
+/* ///////////////////////////////////
+//////////////////////////////////////
+
+              Mobile
+              
+//////////////////////////////////////
+////////////////////////////////////*/
+@media screen and (max-width: 500px) {
+  /* navigation */
+  .footer {
+    padding : 10px 0 10px 0;
+  }
+  .lienCv{
+   width: 80px;
+  }
+  .skill, .exper, .imgFolio, .cvPdf, .lienContact{
+   height: 50px;
+  }
+  .lienCvSkill, .lienCvExper, .lienCvPdf,.lienCvFolio, .lienCvLienContact{
+    font-size: 13px;
+    line-height: 50px;
+  }
+  /* accueil */
+  .monTexte{
+    text-align: left;
+    padding: 20px 0 60px 0;
+    background-position: center top;
+    background-size: 60%;
+  }
+  .monTexte{
+    margin-top: 0;
+  }
+  .nom{
+    font-size: 27px;
+  }
+  .intitule{
+    font-size: 21px;
+  }
+  .pIntro{
+    font-size:14px;
+  }
+  /*experience*/
+  .posteExp{
+    font-size: 16px;
+  }
+  .etablExp{
+    font-size: 15px;
+  }
+  .descrExp{
+    font-size: 11px;
+  }
+  .titreFormation, .titreExp{
+    font-size: 24px;
+  }
+  /* compétences */
+  /* folio */
+}
+@media screen and (max-width: 620px) and (min-width: 500px) {
+  /* navigation */
+  .footer {
+  }
+  .lienCv{
+   width: 90px;
+  }
+  .skill, .exper, .imgFolio, .cvPdf, .lienContact{
+   height: 60px;
+  }
+  .lienCvSkill, .lienCvExper, .lienCvPdf,.lienCvFolio, .lienCvLienContact{
+    line-height: 60px;
+  }
+  /* accueil */
+  .monTexte{
+    text-align: left;
+    margin-top: -10px;
+    padding: 20px;
+  }
+  .monTexte{
+    margin-top: 30px;
+  }
+  .nom{
+    font-size: 36px;
+    margin-top: 0;
+  }
+  .intitule{
+    font-size: 24px;
+  }
+  .pIntro{
+    font-size:15px;
+    margin: 0;
+    width: 100%;
+  }
+}
+
+
+
+
