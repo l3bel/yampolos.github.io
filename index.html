@@ -78,7 +78,7 @@
 		<!--  = = = EXPERIENCE = = = -->
 		<section class="row screen experience" id="experience">
 			<div class="row">
-				<a href="#index.html"class="closeScreen closeScreenExperience col-lg-12 col-md-12 col-sm-12 col-xs-12">Sortir</a>
+				<a href="#index.html"class="closeScreen closeScreenExperience col-lg-12 col-md-12 col-sm-12 col-xs-12">EXIT</a>
 			 	<h2 class="titrePage titreExp">Expérience</h2>
 			 	<div class="carsl col-lg-offset-3 col-lg-6 col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
 			 		<div class="uniteExp">  <!--  Experience unité -->
@@ -192,7 +192,7 @@
 		</section>
 		<!--  = = = COMPETENCES = = = -->
 		<section class="row screen competences" id="competences">
-			<a class="closeScreen closeScreenCompetences col-lg-12 col-md-12 col-sm-12 col-xs-12">Sortir</a>
+			<a class="closeScreen closeScreenCompetences col-lg-12 col-md-12 col-sm-12 col-xs-12">EXIT</a>
 			<div class="slideCompetences col-lg-offset-3 col-lg-6 col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
 			 	<div id="" class="comp compDesign"> <!--  competence 1 -->
 			 		<img src="img/metre.png" class="" alt="">
@@ -245,7 +245,7 @@
 		</section>
 <!--  = = = FOLIO = = = -->
 		<section class="row screen screenFolio" id="folio">
-			<a href="index.html"class="closeScreen closeScreenFolio col-lg-12 col-md-12 col-sm-12 col-xs-12">Fermer</a>
+			<a href="index.html"class="closeScreen closeScreenFolio col-lg-12 col-md-12 col-sm-12 col-xs-12">EXIT</a>
 			<div class="col-lg-offset-1 col-lg-10 col-md-offset-1 col-md-10 col-sm-12 col-xs-12">
 				<h2 class="titreFolio" id="titreFolio">&#123; portfolio &#125;</h2>
 				<div class="slideFolio">
@@ -365,18 +365,19 @@
 		</section>
 		<!--  = = = CONTACT = = = -->
 		<section class="row screen contact" id="contact">
-			<a href="index.html" id="closeScreenContact"class="closeScreen closeScreenContact col-lg-12 col-md-12 col-sm-12 col-xs-12">Sortir</a>
+			<a href="index.html" id="closeScreenContact"class="closeScreen closeScreenContact col-lg-12 col-md-12 col-sm-12 col-xs-12">EXIT</a>
 		 	<div class="containerContact col-lg-offset-3 col-lg-6 col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
-			 	<div class="infoContact col-lg-offset-1 col-lg-5">
+		 		<h2 class="titreContact" id="titreContact">Contactez moi</h2>
+		 		<p class="textContact col-lg-offset-1 col-lg-11">En raison de l'hébérgement Github, le formulaire de contact ne fonctionne pas.<br>Veuillez me contacter par email ou téléphone.</p>
+			 	<div class="infoContact col-lg-6">
 			 		<h3 class="petitTitre">Mes coordonnées</h3>
 			 		<ul>
 			 			<li>Nabil Maskali</li>
-			 			<li>Rennes 3500</li>
-			 			<li>00 11 22 33 44 55</li>
+			 			<li>+33(0)7 58 43 98 11</li>
 			 			<li><a class="monMail" href="mailto:yampolos@gmail.com">yampolos@gmail.com</a></li>
-			 			<li><a href="#"><i class="fa fa-stack-overflow"></i></a></li>
-						<li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
-						<li><a href="#"><i class="fa fa-github"></i></a></li>
+			 			<li><a href="https://twitter.com/nabmaskali" target="_blank"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="https://fr.linkedin.com/in/nmaskali" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+						<li><a href="https://github.com/yampolos" target="_blank"><i class="fa fa-github"></i></a></li>
 			 		</ul>
 			 	</div>
 			 	<div class="formCotact col-lg-5">
@@ -410,6 +411,8 @@
 		// lettering
 		$('.nom').lettering('words');
 		$('.intituleDev').lettering('words');
+		$('.titreFolio').lettering('letters');
+		$('.titreContact').lettering('letters');
 	</script>
 </body>
 </html>
