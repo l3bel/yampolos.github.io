@@ -501,12 +501,13 @@ a, a:hover{
   color:#337AB7;
 }
 .contact p{
+color: #D1CCBA;
 margin: 30px 0 20px 0;
 font-family: 'OpenSans-Light';
 font-size: 1.2em;
 text-align: left;
-padding: 0 0 20px 0;
-border-bottom: 4px dashed #D1CCBA;
+padding: 0 0 30px 0;
+border-bottom: 4px dashed rgba(209,204,186,.4);
 }
 .contact h3{
 font-family: 'Baloo Tamma', cursive;
@@ -516,7 +517,7 @@ color: #D1CCBA;
 padding: 0;
 }
 .infoContact{
-color: white;
+color: #D1CCBA;
 text-align: left;
 text-decoration: none;
 }
