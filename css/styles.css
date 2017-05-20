@@ -61,6 +61,7 @@
 text-align: center;
 }
 .lienCvSkill, .lienCvExper, .lienCvPdf,.lienCvFolio, .lienCvLienContact{
+  width: 100%;
   font-size: 18px;
   color: rgb(6,54,72);
   text-decoration: none;
@@ -85,20 +86,13 @@ text-align: center;
 .lienContact:hover .lienCvLienContact{
   display : inline-block;
 }
-.portFolio:hover .imgFolio{
- display: none;
-}
-.skill:hover .skill{
- display: none;
-}
-.exper:hover .exper{
- display: none;
-}
-.cvPdf:hover .cvPdf{
- display: none;
-}
-.lienContact:hover .lienContact{
- display: none;
+.skill:hover .skill, .exper:hover .exper, .cvPdf:hover .cvPdf, .lienContact:hover .lienContact, .portFolio:hover .imgFolio{
+  position: relative;
+  top: 20px;
+  height: 50px;
+  transition: all 0.4s ease-in;
+  line-height: 50px;
+  height: 50px;
 }
 /* ///////////////////////////////////
 //////////////////////////////////////
@@ -677,7 +671,7 @@ text-decoration: none;
   }
   .container-fluid{
     background-position: center center, 77% 2%;
-    background-size: auto, 50%;
+    background-size: auto, 42%;
   }
   .sky2{
     position: relative;
