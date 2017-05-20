@@ -132,7 +132,7 @@ body {
   background-image: url("../img/bgBody.png"), url("../img/bouqalll.png");
   background-repeat: repeat, no-repeat;
   background-position: center center, 66% 2%;
-  background-size: auto, 25%;
+  background-size: auto, 27%;
 }
 .row {
     margin-right: 0;
@@ -154,7 +154,6 @@ a, a:hover{
 ////////////////////////////////////*/
 /*   Animation CIEL   */
 .sky2{
-  position: fixed;
   width: 100%;
   height: 100%;
   opacity:.9;
@@ -191,7 +190,7 @@ a, a:hover{
   background-image: url('../img/js.png');
   background-size: 7em;
   background-repeat: no-repeat;
-  background-position: 17% top;
+  background-position: 15% top;
   -ms-transform:rotate(-0.02turn);
   -webkit-transform:rotate(-0.02turn);
   transform:rotate(-0.02turn);
@@ -203,7 +202,7 @@ a, a:hover{
     background-size: 13em;
   }
   to {
-    background-position:17% top;
+    background-position:15% top;
     -ms-transform:rotate(-0.02turn);
     -webkit-transform:rotate(-0.02turn);
     transform:rotate(-0.02turn);
@@ -211,9 +210,9 @@ a, a:hover{
 }
 /*  accueil  */
 .monTexte{
-  padding: 30px;
+  margin-top: 20vh;
+  margin-bottom: 100px;
   text-align: left;
-  margin-top: 7%;
   }
 .nom{
   font-size: 36px;
@@ -235,12 +234,14 @@ a, a:hover{
 .intituleDev .word1{
   font-family: 'OpenSans-Semibold';
 }
-
 .pIntro{
   margin-top: 10px;
   color: #273E55;
   font-size:16px;
   font-family: 'OpenSans-Light', sans-serif;
+}
+.nom, .intitule, .pIntro{
+  text-shadow: -2px 2px 2px rgba(214, 209, 190, 1);
 }
 /* ///////////////////////////////////
 //////////////////////////////////////
@@ -266,16 +267,24 @@ a, a:hover{
   background-repeat: repeat;
 }
 .closeScreen{
+  height: 32px;
+  line-height: 32px;
   font-size: 18px;
   color: #4CBAED;
   margin: 10px 0;
   text-align: right;
+  padding-right: 36px;
   cursor: pointer;
   width: 99%;
+  background-image: url(../img/exit.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 30px;
 }
 .closeScreen:hover{
   color: black;
   text-decoration: none;
+  background-image: url(../img/exitGrey.png);
 }
 .experience{
    padding: 5vh 0 0 0;
@@ -400,9 +409,9 @@ a, a:hover{
 }
 .titreFolio{
   text-align: center;
-  margin: 5vw 0 2vw 0;
+  margin: 30px 0 ;
   padding: 0!important;
-  font-size: 48px;
+  font-size: 42px;
   font-family: 'Baloo Tamma', cursive;
   color:rgb(209,204,186);
 }
@@ -567,6 +576,19 @@ text-decoration: none;
 //////////////////////////////////////
 ////////////////////////////////////*/
 @media screen and (max-width: 500px) {
+  body {
+  background-size: 6em, 9em;
+  }
+  .container-fluid{
+    background-position: center center, 60% 2%;
+    background-size: auto, 60%;
+  }
+  .sky2{
+    position: relative;
+  }
+  .js{
+    background-size: 5em;
+  }
   /* navigation */
   .footer {
     padding : 10px 0 10px 0;
@@ -575,21 +597,20 @@ text-decoration: none;
    width: 80px;
   }
   .skill, .exper, .imgFolio, .cvPdf, .lienContact{
-   height: 50px;
+   height: 60px;
   }
   .lienCvSkill, .lienCvExper, .lienCvPdf,.lienCvFolio, .lienCvLienContact{
     font-size: 13px;
-    line-height: 50px;
+    line-height: 60px;
+    height: 60px;
   }
   /* accueil */
   .monTexte{
     text-align: left;
-    padding: 20px 0 60px 0;
+    margin-top: 36vh;
+    margin-bottom: 300px;
     background-position: center top;
     background-size: 60%;
-  }
-  .monTexte{
-    margin-top: 0;
   }
   .nom{
     font-size: 27px;
@@ -613,8 +634,6 @@ text-decoration: none;
   .titreFormation, .titreExp{
     font-size: 24px;
   }
-  /* compétences */
-  /* folio */
 }
 @media screen and (max-width: 620px) and (min-width: 500px) {
   /* navigation */
@@ -624,16 +643,17 @@ text-decoration: none;
    width: 90px;
   }
   .skill, .exper, .imgFolio, .cvPdf, .lienContact{
-   height: 60px;
+   height: 70px;
   }
   .lienCvSkill, .lienCvExper, .lienCvPdf,.lienCvFolio, .lienCvLienContact{
-    line-height: 60px;
+    line-height: 70px;
   }
   /* accueil */
   .monTexte{
     text-align: left;
     margin-top: -10px;
-    padding: 20px;
+    margin-top: 26vh;
+    margin-bottom: 100px;
   }
   .monTexte{
     margin-top: 30px;
@@ -649,6 +669,25 @@ text-decoration: none;
     font-size:15px;
     margin: 0;
     width: 100%;
+  }
+}
+@media screen and (max-width: 900px) and (min-width: 500px) {
+  body {
+    background-size: 9em, 16em;
+  }
+  .container-fluid{
+    background-position: center center, 77% 2%;
+    background-size: auto, 50%;
+  }
+  .sky2{
+    position: relative;
+  }
+  .js{
+    background-size: 5em;
+  }
+  .monTexte{
+    margin-top: 27vh;
+    margin-bottom: 100px;
   }
 }
 
