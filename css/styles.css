@@ -152,8 +152,8 @@ a, a:hover{
   background-size: 5em;
   background-repeat: no-repeat;
   background-position: 80% top;
-  -ms-transform:rotate(0.02turn);
-  -webkit-transform:rotate(0.02turn);
+  /*-ms-transform:rotate(0.02turn);
+  -webkit-transform:rotate(0.02turn);*/
   transform:rotate(0.02turn);
   animation: animCss 5s linear 1;
 }
@@ -164,8 +164,8 @@ a, a:hover{
   }
   to {
     background-position: 80% top;
-    -ms-transform:rotate(0.02turn);
-    -webkit-transform:rotate(0.02turn);
+    /*-ms-transform:rotate(0.02turn);
+    -webkit-transform:rotate(0.02turn);*/
     transform:rotate(0.02turn);
   }
 }
@@ -177,8 +177,8 @@ a, a:hover{
   background-size: 7em;
   background-repeat: no-repeat;
   background-position: 15% top;
-  -ms-transform:rotate(-0.02turn);
-  -webkit-transform:rotate(-0.02turn);
+  /*-ms-transform:rotate(-0.02turn);
+  -webkit-transform:rotate(-0.02turn);*/
   transform:rotate(-0.02turn);
   animation: animJs 3s linear 1;
 }
@@ -189,8 +189,8 @@ a, a:hover{
   }
   to {
     background-position:15% top;
-    -ms-transform:rotate(-0.02turn);
-    -webkit-transform:rotate(-0.02turn);
+    /*-ms-transform:rotate(-0.02turn);
+    -webkit-transform:rotate(-0.02turn);*/
     transform:rotate(-0.02turn);
   }
 }
@@ -212,16 +212,15 @@ a, a:hover{
   font-family: 'Lato-Light', sans-serif;
   color: rgb(6,54,72);
   font-size: 21px;
-  margin: 0 0 10px 0;
+  margin: 0 0 6px 0;
 }
 .intituleDev{
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 .intituleDev .word1{
   font-family: 'Lato-Bold';
 }
 .pIntro{
-  margin-top: 10px;
   color: #273E55;
   font-size:16px;
   font-family: 'Lato-Light', sans-serif;
@@ -275,7 +274,6 @@ a, a:hover{
 .experience{
    padding: 5vh 0 0 0;
 }
-.experience h2{}
 .carsl{
   margin-bottom: 40px!important;
   padding-bottom: 40px!important;
@@ -328,7 +326,6 @@ a, a:hover{
 /************/
 .slick-list.dragging{
   cursor: pointer;
-  cursor: hand;
 }
 .slick-dots{
     bottom: initial!important;
@@ -341,8 +338,8 @@ a, a:hover{
 //////////////////////////////////////
 ////////////////////////////////////*/
 .comp{
-  margin-right: 120px;
-  margin-left: 120px;
+  margin-right: 140px;
+  margin-left: 140px;
 }
 .comp h2 {
   font-size: 27px;
@@ -435,7 +432,7 @@ a, a:hover{
   color: #fff;
   font-size: 18px;
 }
-.descrip ul span{
+.descrip h4 {
   padding-top: 20px;
   font-size: 18px;
   font-family: 'Lato-Bold';
@@ -683,7 +680,3 @@ text-decoration: none;
     margin-bottom: 100px;
   }
 }
-
-
-
-
