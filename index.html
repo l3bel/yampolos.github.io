@@ -22,7 +22,7 @@
 
 	<link rel="icon" type="image/jpg" href="img/yDark.png" />
 	<link rel="stylesheet" href="css/bootstrap.min.css" />
-	<link rel="stylesheet" href="css/font-awesome.css" />
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
 	<link rel="stylesheet" href="css/animate.css"/>
 	<link rel="stylesheet" href="css/slick.css"/>
 	<link rel="stylesheet" href="css/slick-theme.css"/>
@@ -51,23 +51,23 @@
 			<div class="footer col-lg-12 col-md-12 col-sm-12 col-xs-12">
 				<a href="#experience" class="lienCv exper">
 					<img class="exper wow fadeIn" data-wow-delay="0.4s" src="img/balloon.png" alt="mon parcours">
-					<h2 class="lienCvExper wow fadeIn">PARCOURS</h2>
+					<h2 class="lienCvExper wow fadeIn" data-wow-delay="0.4s">PARCOURS</h2>
 				</a>
 				<a href="#competences" class="lienCv skill">
 					<img class="skill wow fadeIn" data-wow-delay="0.6s" src="img/rocket.png" alt="mes compétences">
-					<h2 class="lienCvSkill wow fadeIn">COMPETENCES</h2>
+					<h2 class="lienCvSkill wow fadeIn" data-wow-delay="0.4s">COMPETENCES</h2>
 				</a>
 				<a href="#folio" class="lienCv portFolio">
 					<img class="imgFolio wow fadeIn"  data-wow-delay="0.8s" src="img/folio.png" alt="mon portfolio">
-					<h2 class="lienCvFolio wow fadeIn">PORTFOLIO</h2>
+					<h2 class="lienCvFolio wow fadeIn" data-wow-delay="0.4s">PORTFOLIO</h2>
 				</a>
 				<a href="#contact" class="lienCv lienContact">
 					<img class="lienContact wow fadeIn"  data-wow-delay="1s" src="img/plane.png" alt="me contacter">
-					<h2 class="lienCvLienContact wow fadeIn">CONTACT</h2>
+					<h2 class="lienCvLienContact wow fadeIn" data-wow-delay="0.4s">CONTACT</h2>
 				</a>				
 				<a href="img/nabil_maskali.pdf"  target="_blank" class="lienCv cvPdf">
 					<img class="cvPdf wow fadeIn"  data-wow-delay="1.2s" src="img/pdf.png" alt="mon cv en format pdf">
-					<h2 class="lienCvPdf wow fadeIn">CV PDF</h2>
+					<h2 class="lienCvPdf wow fadeIn" data-wow-delay="0.4s">CV PDF</h2>
 				</a>			
 			</div>
 		</section>
@@ -79,7 +79,7 @@
 			 	<div class="carsl col-lg-offset-3 col-lg-6 col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
 			 		<div class="uniteExp">  <!--  Experience unité -->
 				 		<p class="date">2016 > janvier 2017</p>
-				 		<h4 class="posteExp">Développeur web mobile</h4>
+				 		<h4 class="posteExp">Développeur web mobile Stagiaire</h4>
 				 		<p class="etablExp">CODE ACADÉMIE</p>
 				 		<p class="descrExp">Fondation FACE . Rennes</p>
 				 	</div>
@@ -90,7 +90,7 @@
 				 	</div>
 				 	<div class="uniteExp">  <!--  Experience unité -->
 				 		<p class="date">2009 > 2010</p>
-				 		<h4 class="posteExp">Inforaphiste concepteur</h4>
+				 		<h4 class="posteExp">Infographiste concepteur</h4>
 				 		<p class="etablExp">AVANT-GARDE MULTIMÉDIA</p>
 				 		<p class="descrExp">Agence Web . Casablanca</p>
 				 	</div>
@@ -209,7 +209,7 @@
 			 	</div>	<!--  end competence 1 -->
 			 	<div class="comp compDev"> <!--  competence 2 -->
 			 		<img src="img/keyboard.png" alt="langages et frameworks">
-			 		<h2>Langages et frames</h2>
+			 		<h2>Langages et frameworks</h2>
 				 	<div class="mes langages et frameworks">
 				 		<ul><!--<span>Lanquages et Frameworks</span>-->
 				 			<li>HTML / CSS / SASS</li>
@@ -241,20 +241,43 @@
 		</section>
 <!--  = = = FOLIO = = = -->
 		<section class="row screen screenFolio" id="folio">
-			<a href="index.html" class="closeScreen closeScreenFolio wow zoomIn col-lg-12 col-md-12 col-sm-12 col-xs-12">EXIT</a>
+			<a class="closeScreen closeScreenFolio wow zoomIn col-lg-12 col-md-12 col-sm-12 col-xs-12">EXIT</a>
 			<div class="col-lg-offset-1 col-lg-10 col-md-offset-1 col-md-10 col-sm-12 col-xs-12">
 				<h2 class="titreFolio" id="titreFolio">&#123; portfolio &#125;</h2>
-				<div class="slideFolio">
+				<div class="slideFolio" id="slideFolio">
 					<div class="slideboxFolio"> <!--  = = = slide = = = -->
 						<div class="visuel col-lg-8 col-md-7 col-sm-12 col-xs-12">
 							<a href="#img01" id="img01link">
-								<img src="img/folio/JDLA01.jpg" alt="Jardin de l'amitié" class="img-responsive imgThumb">
+								<img src="img/folio/small/JDLA01S.jpg" alt="Jardin de l'amitié" class="img-responsive imgThumb">
 							</a>
 						</div>
 						<div class="descrip col-lg-4 col-md-5 col-sm-6 col-xs-12">
 							<div class="nomWork">
-								<h3>Site web/mobile du jardin partgé de l'amitié</h3>
+								<h3>Site web du jardin partagé de l'amitié</h3>
 								<p>Conception graphique et développement</p>
+								<h4>Technologie</h4>
+								<ul>
+									<li>Adobe Illustrator</li>
+									<li>HTML5 / CSS3</li>
+									<li>PHP</li>
+									<li>Jquery</li>
+									<li>Bootstrap</li>
+									<li>GIT</li>
+									<li>Création de thème Wordpress</li>
+								</ul>
+							</div>
+						</div>
+					</div><!-- = -->
+					<div class="slideboxFolio"> <!--  = = = slide = = = -->
+						<div class="visuel col-lg-8 col-md-7 col-sm-12 col-xs-12">
+							<a href="#img02" id="img02link">
+								<img src="img/folio/small/codeAcademieS.jpg" alt="code academie" class="img-responsive imgThumb">
+							</a>
+						</div>
+						<div class="descrip col-lg-4 col-md-5 col-sm-6 col-xs-12">
+							<div class="nomWork">
+								<h3>Site promo de la Code Académie</h3>
+								<p>Conception graphique et développement d'une partie du site</p>
 								<h4>Technologie</h4>
 								<ul>
 									<li>HTML5 / CSS3</li>
@@ -262,40 +285,41 @@
 									<li>Jquery</li>
 									<li>Bootstrap</li>
 									<li>GIT</li>
+									<li>Création de thème Wordpress</li>
 								</ul>
 							</div>
 						</div>
 						<div class="descrip liens col-lg-4 col-md-5 col-sm-6 col-xs-12">
 							<ul>
 								<li>
-									<a href="https://www.github.com/" target="_blank">
+									<a href="https://github.com/Tyjow/wordpress-promo" target="_blank">
 										<i class="fa fa-github" aria-hidden="true"></i> Dépot Github
 									</a>
 								</li>
 								<li>
-									<a href="https://www.jardindelamitie.fr/" target="_blank">
+									<a href="http://code-academie.fr/" target="_blank">
 										<i class="fa fa-eye" aria-hidden="true"></i> Visiter
 									</a>
 								</li>
 							</ul>
 						</div>
 					</div><!-- = -->
+
 					<div class="slideboxFolio"> <!--  = = = slide = = = -->
 						<div class="visuel col-lg-8 col-md-7 col-sm-12 col-xs-12">
-							<a href="#img02" id="img02link">
-								<img src="img/folio/JDLA01.jpg" alt="Jardin de l'amitié" class="img-responsive imgThumb">
+							<a href="#img09" id="img09link">
+								<img src="img/folio/small/interFaceS.jpg" alt="code academie" class="img-responsive imgThumb">
 							</a>
 						</div>
 						<div class="descrip col-lg-4 col-md-5 col-sm-6 col-xs-12">
 							<div class="nomWork">
-								<h3>Site web/mobile du jardin partgé de l'amitié</h3>
-								<p>Conception graphique et développement</p>
+								<h3>Dashboard application INTER-FACE</h3>
+								<p>Conception graphique et développement du Front</p>
 								<h4>Technologie</h4>
 								<ul>
 									<li>HTML5 / CSS3</li>
-									<li>PHP</li>
+									<li>Synfony / Twig</li>
 									<li>Jquery</li>
-									<li>Bootstrap</li>
 									<li>GIT</li>
 								</ul>
 							</div>
@@ -303,13 +327,8 @@
 						<div class="descrip liens col-lg-4 col-md-5 col-sm-6 col-xs-12">
 							<ul>
 								<li>
-									<a href="https://www.github.com/" target="_blank">
+									<a href="https://github.com/Badabingbing/interface" target="_blank">
 										<i class="fa fa-github" aria-hidden="true"></i> Dépot Github
-									</a>
-								</li>
-								<li>
-									<a href="https://www.jardindelamitie.fr/" target="_blank">
-										<i class="fa fa-eye" aria-hidden="true"></i> Visiter
 									</a>
 								</li>
 							</ul>
@@ -318,12 +337,30 @@
 					<div class="slideboxFolio"> <!--  = = = slide = = = -->
 						<div class="visuel col-lg-8 col-md-7 col-sm-12 col-xs-12">
 							<a href="#img03" id="img03link">
-								<img src="img/folio/JDLA01.jpg" alt="Jardin de l'amitié" class="img-responsive imgThumb">
+								<img src="img/folio/small/3andTheDogS.jpg" alt="Jardin de l'amitié" class="img-responsive imgThumb">
 							</a>
 						</div>
 						<div class="descrip col-lg-4 col-md-5 col-sm-6 col-xs-12">
 							<div class="nomWork">
-								<h3>Site web/mobile du jardin partgé de l'amitié</h3>
+								<h3>Site web d'une startup</h3>
+								<p>Design et illustration</p>
+								<h4>Technologie</h4>
+								<ul>
+									<li>Adobe Illustrator</li>
+									<li>Adobe Photoshop</li>
+								</ul>
+							</div>
+						</div>
+					</div><!-- = -->
+					<div class="slideboxFolio"> <!--  = = = slide = = = -->
+						<div class="visuel col-lg-8 col-md-7 col-sm-12 col-xs-12">
+							<a href="#img04" id="img04link">
+								<img src="img/folio/small/hypnoseDaxS.jpg" alt="Jardin de l'amitié" class="img-responsive imgThumb">
+							</a>
+						</div>
+						<div class="descrip col-lg-4 col-md-5 col-sm-6 col-xs-12">
+							<div class="nomWork">
+								<h3>Site web d'hynothérapeute</h3>
 								<p>Conception graphique et développement</p>
 								<h4>Technologie</h4>
 								<ul>
@@ -332,33 +369,132 @@
 									<li>Jquery</li>
 									<li>Bootstrap</li>
 									<li>GIT</li>
+									<li>Création de thème Wordpress</li>
 								</ul>
 							</div>
 						</div>
 						<div class="descrip liens col-lg-4 col-md-5 col-sm-6 col-xs-12">
 							<ul>
 								<li>
-									<a href="https://www.github.com/" target="_blank">
+									<a href="https://github.com/FloryanL/Hypno" target="_blank">
 										<i class="fa fa-github" aria-hidden="true"></i> Dépot Github
-									</a>
-								</li>
-								<li>
-									<a href="https://www.jardindelamitie.fr/" target="_blank">
-										<i class="fa fa-eye" aria-hidden="true"></i> Visiter
 									</a>
 								</li>
 							</ul>
 						</div>
 					</div><!-- = -->
+					<div class="slideboxFolio"> <!--  = = = slide = = = -->
+						<div class="visuel col-lg-8 col-md-7 col-sm-12 col-xs-12">
+							<a href="#img05" id="img05link">
+								<img src="img/folio/small/jeTaimeFortS.jpg" alt="Jardin de l'amitié" class="img-responsive imgThumb">
+							</a>
+						</div>
+						<div class="descrip col-lg-4 col-md-5 col-sm-6 col-xs-12">
+							<div class="nomWork">
+								<h3>Application d'envois de carte via les réseaux sociaux</h3>
+								<p>Conception graphique</p>
+								<h4>Technologie</h4>
+								<ul>
+									<li>Adobe Illustrator</li>
+								</ul>
+							</div>
+						</div>
+					</div><!-- = -->
+					<div class="slideboxFolio"> <!--  = = = slide = = = -->
+						<div class="visuel col-lg-8 col-md-7 col-sm-12 col-xs-12">
+							<a href="#img06" id="img06link">
+								<img src="img/folio/small/moroccanViewsS.jpg" alt="Jardin de l'amitié" class="img-responsive imgThumb">
+							</a>
+						</div>
+						<div class="descrip col-lg-4 col-md-5 col-sm-6 col-xs-12">
+							<div class="nomWork">
+								<h3>Site web d'une agence de voyage</h3>
+								<p>Conception graphique</p>
+								<h4>Technologie</h4>
+								<ul>
+									<li>Adobe Illustrator</li>
+									<li>Adobe Photoshop</li>
+								</ul>
+							</div>
+						</div>
+					</div><!-- = -->
+					<div class="slideboxFolio"> <!--  = = = slide = = = -->
+						<div class="visuel col-lg-8 col-md-7 col-sm-12 col-xs-12">
+							<a href="#img07" id="img07link">
+								<img src="img/folio/small/ebullitionS.jpg" alt="Jardin de l'amitié" class="img-responsive imgThumb">
+							</a>
+						</div>
+						<div class="descrip col-lg-4 col-md-5 col-sm-6 col-xs-12">
+							<div class="nomWork">
+								<h3>Site web d'une marque de vêtements</h3>
+								<p>Conception graphique et développement</p>
+								<h4>Technologie</h4>
+								<ul>
+									<li>Adobe Illustrator</li>
+									<li>HTML5 / CSS3</li>
+									<li>PHP</li>
+									<li>Jquery</li>
+									<li>Bootstrap</li>
+									<li>GIT</li>
+									<li>Création de thème Wordpress</li>
+								</ul>
+							</div>
+						</div>
+						<div class="descrip liens col-lg-4 col-md-5 col-sm-6 col-xs-12">
+							<ul>
+								<li>
+									<a href="https://github.com/yampolos/projetEbullition" target="_blank">
+										<i class="fa fa-github" aria-hidden="true"></i> Dépot Github
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div><!-- = -->
+					<div class="slideboxFolio"> <!--  = = = slide = = = -->
+						<div class="visuel col-lg-8 col-md-7 col-sm-12 col-xs-12">
+							<a href="#img08" id="img08link">
+								<img src="img/folio/small/kyotoGuestHouseS.jpg" alt="Jardin de l'amitié" class="img-responsive imgThumb">
+							</a>
+						</div>
+						<div class="descrip col-lg-4 col-md-5 col-sm-6 col-xs-12">
+							<div class="nomWork">
+								<h3>Site web de tourisme</h3>
+								<p>Conception graphique</p>
+								<h4>Technologie</h4>
+								<ul>
+									<li>Adobe Illustrator</li>
+									<li>Adobe Photoshop</li>
+								</ul>
+							</div>
+						</div>
+					</div><!-- = -->
 				</div>
-				<a href="#" class="lightbox" id="img01">
-					<img  class="imgLightbox" src="img/folio/JDLA01.jpg" alt="Jardin de l'amitié grand format">
+				<a href="#folio" class="lightbox" id="img01">
+					<img  class="imgLightbox" src="img/folio/big/JDLA01.jpg" alt="Jardin de l'amitié grand format">
 				</a>
-				<a href="#" class="lightbox" id="img02">
-					<img  class="imgLightbox" src="img/folio/JDLA02.jpg" alt="Jardin de l'amitié grand format">
+				<a href="#folio" class="lightbox" id="img02">
+					<img  class="imgLightbox" src="img/folio/big/codeAcademie.jpg" alt="Jardin de l'amitié grand format">
 				</a>
-				<a href="#" class="lightbox" id="img03">
-					<img  class="imgLightbox" src="img/folio/JDLA01.jpg" alt="Jardin de l'amitié grand format">
+				<a href="#folio" class="lightbox" id="img03">
+					<img  class="imgLightbox" src="img/folio/big/3andTheDog.jpg" alt="Jardin de l'amitié grand format">
+				</a>
+				<a href="#folio" class="lightbox" id="img04">
+					<img  class="imgLightbox" src="img/folio/big/hypnoseDax.jpg" alt="Jardin de l'amitié grand format">
+				</a>
+				<a href="#folio" class="lightbox" id="img05">
+					<img  class="imgLightbox" src="img/folio/big/jeTaimeFort.jpg" alt="Jardin de l'amitié grand format">
+				</a>
+				<a href="#folio" class="lightbox" id="img06">
+					<img  class="imgLightbox" src="img/folio/big/moroccanViews.jpg" alt="Jardin de l'amitié grand format">
+				</a>
+				<a href="#folio" class="lightbox" id="img07">
+					<img  class="imgLightbox" src="img/folio/big/ebullition.jpg" alt="Jardin de l'amitié grand format">
+				</a>
+				<a href="#folio" class="lightbox" id="img08">
+					<img  class="imgLightbox" src="img/folio/big/kyotoGuestHouse.jpg" alt="Jardin de l'amitié grand format">
+				</a>
+				<a href="#folio" class="lightbox" id="img09">
+					<img  class="imgLightbox" src="img/folio/big/interFace.jpg" alt="Jardin de l'amitié grand format">
 				</a>
 			</div>
 		</section>

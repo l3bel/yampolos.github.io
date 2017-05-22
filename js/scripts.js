@@ -38,6 +38,24 @@ $(document).ready(function(){
     $("#img03link").click(function(){
         $("#img03").fadeIn(600);
     });
+     $("#img04link").click(function(){
+        $("#img04").fadeIn(600);
+    });
+    $("#img05link").click(function(){
+        $("#img05").fadeIn(600);
+    });
+    $("#img06link").click(function(){
+        $("#img06").fadeIn(600);
+    });
+      $("#img07link").click(function(){
+        $("#img07").fadeIn(600);
+    });
+    $("#img08link").click(function(){
+        $("#img08").fadeIn(600);
+    });
+    $("#img09link").click(function(){
+        $("#img09").fadeIn(600);
+    });
     $(".imgLightbox").click(function(){
         $(".lightbox").fadeOut();
     });
@@ -75,17 +93,18 @@ $(document).ready(function(){
         accessibility: true
     });
 
-/////// Carousel Folio 
+/////// Carousel Folio
    $('.slideFolio').slick({
+        autoplay: true,
+        autoplaySpeed:1800,
         speed: 500,
-        infinite: false,
+        infinite: true,
         dots: true,
         slidesToShow:1,
         draggable: true,
-        variableWidth: false,
         accessibility: true
     });
-
+    
 //// fermer les lightbox avec echap
    $(document).keyup(function(e) {
         if (e.keyCode == 27) { 

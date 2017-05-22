@@ -1,5 +1,4 @@
- /*///////////FONTS/////////////
- ////////////////////////////*/
+ /*/////// FONTS ///////*/
 @font-face {
   font-family: 'Raleway Dots';
   src: url('../fonts/RalewayDots-Regular.ttf');
@@ -46,7 +45,6 @@
  width: 120px;
  text-align: center;
 }
-
 .skill, .exper, .imgFolio, .cvPdf, .lienContact{
  height: 90px;
  z-index: 1;
@@ -54,7 +52,7 @@ text-align: center;
 }
 .lienCvSkill, .lienCvExper, .lienCvPdf,.lienCvFolio, .lienCvLienContact{
   width: 100%;
-  font-size: 18px;
+  font-size: 16px;
   color: rgb(6,54,72);
   text-decoration: none;
   margin: 0;
@@ -80,11 +78,10 @@ text-align: center;
 }
 .skill:hover .skill, .exper:hover .exper, .cvPdf:hover .cvPdf, .lienContact:hover .lienContact, .portFolio:hover .imgFolio{
   position: relative;
-  top: 20px;
+  top: 34px;
   height: 50px;
-  transition: all 0.4s ease-in;
-  line-height: 50px;
-  height: 50px;
+  transition: all 0.5s ease-in;
+  
 }
 /* ///////////////////////////////////
 //////////////////////////////////////
@@ -279,8 +276,8 @@ a, a:hover{
   padding-bottom: 40px!important;
   }
 .uniteExp{
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: 160px;
+  margin-right: 160px;
   padding: 20px;
 }
 .date{
@@ -370,7 +367,6 @@ a, a:hover{
 .compDev h2 {
   color: rgb(255,177,35);
 }
-
 .compMethod h2 {
   color: rgb(153,153,153);
 }
@@ -414,6 +410,8 @@ a, a:hover{
 }
 .slideboxFolio{
   color: #fff;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .visuel{
  margin-bottom: 30px;
